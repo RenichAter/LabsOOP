@@ -1,9 +1,4 @@
 ﻿namespace Ex3
-{
-    public class Anata
-    {
-        public Anata() { }
-    }
     public class NodeOfTree<T>
     {
         public T Value { get; }

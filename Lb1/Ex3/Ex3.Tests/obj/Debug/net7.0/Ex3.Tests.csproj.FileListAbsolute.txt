@@ -1,0 +1,5 @@
+C:\Users\Dmitrosh\source\repos\Ex3\Ex3.Tests\obj\Debug\net7.0\Ex3.Tests.csproj.AssemblyReference.cache
+C:\Users\Dmitrosh\source\repos\Ex3\Ex3.Tests\obj\Debug\net7.0\Ex3.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dmitrosh\source\repos\Ex3\Ex3.Tests\obj\Debug\net7.0\Ex3.Tests.AssemblyInfoInputs.cache
+C:\Users\Dmitrosh\source\repos\Ex3\Ex3.Tests\obj\Debug\net7.0\Ex3.Tests.AssemblyInfo.cs
+C:\Users\Dmitrosh\source\repos\Ex3\Ex3.Tests\obj\Debug\net7.0\Ex3.Tests.csproj.CoreCompileInputs.cache

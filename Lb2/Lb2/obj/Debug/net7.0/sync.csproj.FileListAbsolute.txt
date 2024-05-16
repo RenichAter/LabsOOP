@@ -1,0 +1,14 @@
+C:\Users\Dmitrosh\source\repos\Lb2\Lb2\bin\Debug\net7.0\sync.exe
+C:\Users\Dmitrosh\source\repos\Lb2\Lb2\bin\Debug\net7.0\sync.deps.json
+C:\Users\Dmitrosh\source\repos\Lb2\Lb2\bin\Debug\net7.0\sync.runtimeconfig.json
+C:\Users\Dmitrosh\source\repos\Lb2\Lb2\bin\Debug\net7.0\sync.dll
+C:\Users\Dmitrosh\source\repos\Lb2\Lb2\bin\Debug\net7.0\sync.pdb
+C:\Users\Dmitrosh\source\repos\Lb2\Lb2\obj\Debug\net7.0\sync.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dmitrosh\source\repos\Lb2\Lb2\obj\Debug\net7.0\sync.AssemblyInfoInputs.cache
+C:\Users\Dmitrosh\source\repos\Lb2\Lb2\obj\Debug\net7.0\sync.AssemblyInfo.cs
+C:\Users\Dmitrosh\source\repos\Lb2\Lb2\obj\Debug\net7.0\sync.csproj.CoreCompileInputs.cache
+C:\Users\Dmitrosh\source\repos\Lb2\Lb2\obj\Debug\net7.0\sync.dll
+C:\Users\Dmitrosh\source\repos\Lb2\Lb2\obj\Debug\net7.0\refint\sync.dll
+C:\Users\Dmitrosh\source\repos\Lb2\Lb2\obj\Debug\net7.0\sync.pdb
+C:\Users\Dmitrosh\source\repos\Lb2\Lb2\obj\Debug\net7.0\sync.genruntimeconfig.cache
+C:\Users\Dmitrosh\source\repos\Lb2\Lb2\obj\Debug\net7.0\ref\sync.dll

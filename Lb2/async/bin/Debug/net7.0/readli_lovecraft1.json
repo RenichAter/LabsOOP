@@ -1,0 +1,858 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="google-site-verification" content="rt7K6tWKVZWZ-5V8F6BVoYlPRppUf8yyEZBQdfKkiVY" />
+    <title>Поиск | Ридли | Книги скачать, читать бесплатно</title>
+    <link rel="canonical" href="https://readli.net/srch/?q=%D0%BB%D0%B0%D0%B2%D0%BA%D1%80%D0%B0%D1%84%D1%82">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="stylesheet" type="text/css" href="/css/style-new.css?v=27">
+    <script src="https://use.fontawesome.com/78a61e270d.js"></script>
+    <!--[if lt IE 9]><script src="/js/html5.js"></script><![endif]-->
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/jquery-migrate-1.4.1.min.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js" defer></script>
+    <script src="/js/ui-touch-punch.js"></script>
+    <script src="/js/formstyler.js"></script>
+    <script src="/js/mousewheel.js"></script>
+    <script src="/js/mcustomscrollbar.js"></script>
+    <script src="/js/slick.js"></script>
+    <script src="/js/ellip.js"></script>
+    <script src="/js/autogrow.js"></script>
+    <script src="/js/fancybox.js"></script>
+    <script src="/js/multifile.js"></script>
+    <script src="/js/custom.js?v=24" defer></script>
+	<script src="https://yandex.ru/ads/system/header-bidding.js" defer></script>
+	<script type="text/javascript" src="https://ads.digitalcaramel.com/js/readli.net.js" defer async></script>
+	<script>window.yaContextCb = window.yaContextCb || []</script>
+	<script src="https://yandex.ru/ads/system/context.js" defer async></script>
+
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId            : '1927177654249490',
+                autoLogAppEvents : true,
+                xfbml            : true,
+                version          : 'v3.2'
+            });
+        };
+    </script>
+    
+
+    <meta property="og:url" content="https://readli.net/srch/?q=%D0%BB%D0%B0%D0%B2%D0%BA%D1%80%D0%B0%D1%84%D1%82">
+    <meta property="og:title" content="Поиск | Ридли | Книги скачать, читать бесплатно">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://readli.net/img/logo-1.png">
+
+</head>
+<body class="page-book">
+
+	<!-- Yandex.RTB R-A-1984557-30 -->
+	<script>window.yaContextCb.push(()=>{
+		Ya.Context.AdvManager.render({
+			"blockId": "R-A-1984557-30",
+			"type": "fullscreen",
+			"platform": "desktop"
+		})
+	})
+	</script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-99607459-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<div class="main-wrap">
+    <!-- BEGIN HEADER -->
+    <header class="header">
+        <div class="header__main wrapper">
+            <div class="header__cols">
+                <div class="header__left">
+                    <a class="header-logo" href="/">Ридли</a>
+                </div>
+                <div class="header__right">
+                    <!-- BEGIN HEADER NAV -->
+                    <nav class="header-desktop js-from-1">
+                        <ul class="header-nav js-content-1">
+                            <li class="header-nav__item">
+                                <a class="header-nav__link header-nav__link_icon-1" href="/">Книги</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a class="header-nav__link header-nav__link_icon-2" href="/avtoryi/">Авторы</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a class="header-nav__link header-nav__link_icon-3" href="/zhanryi/">Жанры</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- HEADER NAV EOF -->
+                    <!-- BEGIN HEADER SEARCH -->
+                    <div class="header-search js-search js-scroll">
+                        <button class="header-search__mob js-search-show"></button>
+                        <!-- BEGIN SEARCH FORM -->
+                        <script>
+                            $(document).ready(function() {
+                                $("#search-book").live("keyup", function (e) {
+                                    if(e.which == 13) {
+                                        document.location.href = "/srch/?q="+$('#search-book').val();
+                                    } else {
+                                        if ($(this).val().length > 2) {
+                                            $.post('/ajax-site/search-books/', 'q=' + $(this).val(), function (data) {
+                                                $('#book-search-result').html(data);
+                                            });
+                                        } else {
+                                            $('#book-search-result').html('');
+                                        }
+                                    }
+                                });
+                                $('#search-book-button, #show-srch-results').click(function () {
+                                    document.location.href = "/srch/?q="+$('#search-book').val();
+                                });
+                            });
+                        </script>
+                        <div class="header-search__form">
+                            <input id="search-book" class="header-search__input js-search-input" value="лавкрафт" type="text" placeholder="Поиск...">
+                            <button id="search-book-button" class="header-search__button button-blue"></button>
+                        </div>
+                        <!-- SEARCH FORM EOF -->
+                        <!-- BEGIN SEARCH RESULTS -->
+                        <div class="search-results js-search-hide">
+                            <div class="search-results__all">
+                                <div class="search-results__scroll js-scroll-content js-scroll-fix">
+                                    <ul class="search-results__list" id="book-search-result">
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <a id="show-srch-results" class="search-results__button js-scroll-button" href="#"><span>Показать все результаты поиска</span></a>
+                        </div>
+                        <!-- SEARCH RESULTS EOF -->
+                    </div>
+                    <!-- HEADER SEARCH EOF -->
+                                        <!-- BEGIN HEADER USER -->
+                    <div class="header-user">
+                        <a class="header-user__button button button-white" href="javascript:void(0);" data-popup="#popup-login">Войти</a>
+                    </div>
+                    <!-- HEADER USER EOF -->
+                    <!-- BEGIN HEADER MOB -->
+                    <div class="header-mob">
+                        <button class="header-mob__button js-mob-open"><span></span></button>
+                        <div class="mobile-hide js-mob-hide">
+                            <button class="mobile-hide__close button-close-1 js-mob-close"></button>
+                            <div class="mobile-hide__all">
+                                <div class="mobile-hide__fix js-to-1">
+                                    <ul class="header-nav js-content-1">
+                                        <li class="header-nav__item">
+                                            <a class="header-nav__link header-nav__link_icon-1" href="/">Книги</a>
+                                        </li>
+                                        <li class="header-nav__item">
+                                            <a class="header-nav__link header-nav__link_icon-2" href="/avtoryi/">Авторы</a>
+                                        </li>
+                                        <li class="header-nav__item">
+                                            <a class="header-nav__link header-nav__link_icon-3" href="/zhanryi/">Жанры</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <ul class="mobile-nav">
+                                    <li class="mobile-nav__item">
+                                        <a class="mobile-nav__link mobile-nav__link_icon-4" href="javascript:void(0);" data-popup="#popup-admin">Письмо админу</a>
+                                    </li>
+                                    <li class="mobile-nav__item">
+                                        <a class="mobile-nav__link mobile-nav__link_icon-1" href="javascript:void(0);" data-popup="#popup-login">Войти</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a class="mobile-mask js-mob-mask js-mob-close" href="javascript:void(0);"></a>
+                    </div>
+                    <!-- HEADER MOB EOF -->
+                                    </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER EOF -->
+    <!-- BEGIN MAIN -->
+    <main class="main">
+                <div class="genres wrapper js-showmore">
+    <div class="genre-category">
+        <h1 class="genre-category__title">Результаты поиска "лавкрафт"</h1>
+        <div class="books__list books__list_type-4" id="books">
+                <article class="book">
+        <div class="book__image-wrap">
+                        <a class="book__image search_res_img_list" href="https://readli.net/usyipalnitsa-2/">
+                <img alt="Усыпальница" src="https://readli.net/wp-content/uploads/2016/05/BCL_168424.jpg">
+            </a>
+
+            <!-- меню три точки -->
+            
+<div class="show-more js-fade-click">
+    <button class="button-dots js-fade-click-button"><span></span></button>
+    <div class="more-hide js-fade-click-hide">
+        <ul class="more-hide__list">
+                        <li class="more-hide__item" style="">
+                <a class="add-to-want-to-read more-hide__link" data-popup="#popup-login"                   data-in-where="1" data-page="site" data-tab=""
+                   data-book-id="857888" href="javascript: void(0)">Читаю</a>
+            </li>
+            <li class="more-hide__item" style="">
+                <a class="add-to-archive more-hide__link" data-popup="#popup-login"                   data-in-where="3" data-page="site" data-tab=""
+                   data-book-id="857888" href="javascript: void(0)">В архив</a>
+            </li>
+                                </ul>
+    </div>
+</div>
+
+            <div class="item-info js-fade-click">
+                <button class="item-info__button js-fade-click-button no-fade"></button>
+                <div class="item-info__fix js-fade-click-fix"></div>
+                <div class="info-hide js-fade-click-hide">
+
+                    <!-- статистика -->
+                    
+<div class="info-hide__top">
+    <ul class="info-numbers">
+        <li class="info-numbers__item info-numbers__item_icon-1">597<span class="info-numbers__icon info-numbers__icon_1 js-tooltip" data-content="Просмотры"></span></li>
+        <li class="info-numbers__item info-numbers__item_icon-2">2<span class="info-numbers__icon info-numbers__icon_2 js-tooltip" data-content="Добавления в библиотеку"></span></li>
+        <li class="info-numbers__item info-numbers__item_icon-3">0<a class="info-numbers__icon info-numbers__icon_3 js-tooltip" href="https://readli.net/usyipalnitsa-2/#comments" data-content="Комментарии"></a></li>
+    </ul>
+</div>
+                    <div class="info-hide__middle">
+                                                <p class="info-hide__text">Жанр: <a class="book-info__link" href="/cat/prochaya-literatura/raznoe/">Разное</a></p>
+                    </div>
+                    <div class="info-hide__middle">
+                        <p class="info-hide__title">Аннотация:</p>
+                        <p class="info-hide__text">Джервас Дадли очень интересуется историей своих предков. То, что по ходу дела он обнаруживает не оче...</p>
+                    </div>
+                    <a class="info-hide__link" href="/chitat-online/?b=857888&pg=1"><b>Блок</b>&nbsp;—&nbsp;0&nbsp;стр.</a>
+                </div>
+            </div>
+        </div>
+        <h4 class="book__title">
+            <a class="book__link js-ellip-2" href="https://readli.net/usyipalnitsa-2/" title="Усыпальница">Усыпальница</a>
+        </h4>
+        <div class="book__top js-fade js-fade-out">
+                        <div class="book__authors-wrap">
+                <p class="book__authors"><a class="book__link" href="/avtor/%d0%bb%d0%b0%d0%b2%d0%ba%d1%80%d0%b0%d1%84%d1%82-%d0%b3%d0%be%d0%b2%d0%b0%d1%80%d0%b4/">Лавкрафт Говард</a></p>
+            </div>
+                    </div>
+        <div class="rating">
+            <span class="rating__star">
+                <img alt="" src="/img/svg/rating/rating5.svg">
+            </span>
+            <span class="rating__number">3</span>
+        </div>
+    </article>    <article class="book">
+        <div class="book__image-wrap">
+                        <a class="book__image search_res_img_list" href="https://readli.net/son-12/">
+                <img alt="Сон" src="https://readli.net/wp-content/uploads/cover5.jpg">
+            </a>
+
+            <!-- меню три точки -->
+            
+<div class="show-more js-fade-click">
+    <button class="button-dots js-fade-click-button"><span></span></button>
+    <div class="more-hide js-fade-click-hide">
+        <ul class="more-hide__list">
+                        <li class="more-hide__item" style="">
+                <a class="add-to-want-to-read more-hide__link" data-popup="#popup-login"                   data-in-where="1" data-page="site" data-tab=""
+                   data-book-id="87178" href="javascript: void(0)">Читаю</a>
+            </li>
+            <li class="more-hide__item" style="">
+                <a class="add-to-archive more-hide__link" data-popup="#popup-login"                   data-in-where="3" data-page="site" data-tab=""
+                   data-book-id="87178" href="javascript: void(0)">В архив</a>
+            </li>
+                                </ul>
+    </div>
+</div>
+
+            <div class="item-info js-fade-click">
+                <button class="item-info__button js-fade-click-button no-fade"></button>
+                <div class="item-info__fix js-fade-click-fix"></div>
+                <div class="info-hide js-fade-click-hide">
+
+                    <!-- статистика -->
+                    
+<div class="info-hide__top">
+    <ul class="info-numbers">
+        <li class="info-numbers__item info-numbers__item_icon-1">194<span class="info-numbers__icon info-numbers__icon_1 js-tooltip" data-content="Просмотры"></span></li>
+        <li class="info-numbers__item info-numbers__item_icon-2">1<span class="info-numbers__icon info-numbers__icon_2 js-tooltip" data-content="Добавления в библиотеку"></span></li>
+        <li class="info-numbers__item info-numbers__item_icon-3">0<a class="info-numbers__icon info-numbers__icon_3 js-tooltip" href="https://readli.net/son-12/#comments" data-content="Комментарии"></a></li>
+    </ul>
+</div>
+                    <div class="info-hide__middle">
+                                                <p class="info-hide__text">Жанр: <a class="book-info__link" href="/cat/fantasticheskaya-literatura/nauchnaya-fantastika/">Научная фантастика</a></p>
+                    </div>
+                    <div class="info-hide__middle">
+                        <p class="info-hide__title">Аннотация:</p>
+                        <p class="info-hide__text"> Говард Лавкрафт   Сон   На мансарду меня провел серьезный мужчина интеллигентной наружности. Седобо...</p>
+                    </div>
+                    <a class="info-hide__link" href="/chitat-online/?b=87178&pg=1"><b>Полный текст</b>&nbsp;—&nbsp;2&nbsp;стр.</a>
+                </div>
+            </div>
+        </div>
+        <h4 class="book__title">
+            <a class="book__link js-ellip-2" href="https://readli.net/son-12/" title="Сон">Сон</a>
+        </h4>
+        <div class="book__top js-fade js-fade-out">
+                        <div class="book__authors-wrap">
+                <p class="book__authors"><a class="book__link" href="/avtor/Lavkraft-Govard-Fillips/">Лавкрафт Говард Филлипс</a></p>
+            </div>
+                    </div>
+        <div class="rating">
+            <span class="rating__star">
+                <img alt="" src="/img/svg/rating/rating5.svg">
+            </span>
+            <span class="rating__number">2</span>
+        </div>
+    </article>    <article class="book">
+        <div class="book__image-wrap">
+                        <a class="book__image search_res_img_list" href="https://readli.net/izvne-8/">
+                <img alt="Извне" src="https://readli.net/wp-content/uploads/2024/04/1291799.jpg">
+            </a>
+
+            <!-- меню три точки -->
+            
+<div class="show-more js-fade-click">
+    <button class="button-dots js-fade-click-button"><span></span></button>
+    <div class="more-hide js-fade-click-hide">
+        <ul class="more-hide__list">
+                        <li class="more-hide__item" style="">
+                <a class="add-to-want-to-read more-hide__link" data-popup="#popup-login"                   data-in-where="1" data-page="site" data-tab=""
+                   data-book-id="1291799" href="javascript: void(0)">Читаю</a>
+            </li>
+            <li class="more-hide__item" style="">
+                <a class="add-to-archive more-hide__link" data-popup="#popup-login"                   data-in-where="3" data-page="site" data-tab=""
+                   data-book-id="1291799" href="javascript: void(0)">В архив</a>
+            </li>
+                                </ul>
+    </div>
+</div>
+
+            <div class="item-info js-fade-click">
+                <button class="item-info__button js-fade-click-button no-fade"></button>
+                <div class="item-info__fix js-fade-click-fix"></div>
+                <div class="info-hide js-fade-click-hide">
+
+                    <!-- статистика -->
+                    
+<div class="info-hide__top">
+    <ul class="info-numbers">
+        <li class="info-numbers__item info-numbers__item_icon-1">14<span class="info-numbers__icon info-numbers__icon_1 js-tooltip" data-content="Просмотры"></span></li>
+        <li class="info-numbers__item info-numbers__item_icon-2">0<span class="info-numbers__icon info-numbers__icon_2 js-tooltip" data-content="Добавления в библиотеку"></span></li>
+        <li class="info-numbers__item info-numbers__item_icon-3">0<a class="info-numbers__icon info-numbers__icon_3 js-tooltip" href="https://readli.net/izvne-8/#comments" data-content="Комментарии"></a></li>
+    </ul>
+</div>
+                    <div class="info-hide__middle">
+                                                <p class="info-hide__text">Жанр: <a class="book-info__link" href="/cat/prochaya-literatura/raznoe/">Разное</a></p>
+                    </div>
+                    <div class="info-hide__middle">
+                        <p class="info-hide__title">Аннотация:</p>
+                        <p class="info-hide__text">   Американский писатель Говард Филлипс Лавкрафт при жизни не опубликовал ни одной книги, печатаясь ...</p>
+                    </div>
+                    <a class="info-hide__link" href="/chitat-online/?b=1291799&pg=1"><b>Фрагмент</b>&nbsp;—&nbsp;3&nbsp;стр.</a>
+                </div>
+            </div>
+        </div>
+        <h4 class="book__title">
+            <a class="book__link js-ellip-2" href="https://readli.net/izvne-8/" title="Извне">Извне</a>
+        </h4>
+        <div class="book__top js-fade js-fade-out">
+                        <div class="book__authors-wrap">
+                <p class="book__authors"><a class="book__link" href="/avtor/%d0%bb%d0%b0%d0%b2%d0%ba%d1%80%d0%b0%d1%84%d1%82-%d0%b3%d0%be%d0%b2%d0%b0%d1%80%d0%b4/">Лавкрафт Говард</a></p>
+            </div>
+                    </div>
+        <div class="rating">
+            <span class="rating__star">
+                <img alt="" src="/img/svg/rating/rating0.svg">
+            </span>
+            <span class="rating__number">0</span>
+        </div>
+    </article>    <article class="book">
+        <div class="book__image-wrap">
+                        <a class="book__image search_res_img_list" href="https://readli.net/koshmar-po-eta/">
+                <img alt="Кошмар По-эта" src="https://readli.net/wp-content/uploads/2020/04/1056664.jpg">
+            </a>
+
+            <!-- меню три точки -->
+            
+<div class="show-more js-fade-click">
+    <button class="button-dots js-fade-click-button"><span></span></button>
+    <div class="more-hide js-fade-click-hide">
+        <ul class="more-hide__list">
+                        <li class="more-hide__item" style="">
+                <a class="add-to-want-to-read more-hide__link" data-popup="#popup-login"                   data-in-where="1" data-page="site" data-tab=""
+                   data-book-id="1056664" href="javascript: void(0)">Читаю</a>
+            </li>
+            <li class="more-hide__item" style="">
+                <a class="add-to-archive more-hide__link" data-popup="#popup-login"                   data-in-where="3" data-page="site" data-tab=""
+                   data-book-id="1056664" href="javascript: void(0)">В архив</a>
+            </li>
+                                </ul>
+    </div>
+</div>
+
+            <div class="item-info js-fade-click">
+                <button class="item-info__button js-fade-click-button no-fade"></button>
+                <div class="item-info__fix js-fade-click-fix"></div>
+                <div class="info-hide js-fade-click-hide">
+
+                    <!-- статистика -->
+                    
+<div class="info-hide__top">
+    <ul class="info-numbers">
+        <li class="info-numbers__item info-numbers__item_icon-1">249<span class="info-numbers__icon info-numbers__icon_1 js-tooltip" data-content="Просмотры"></span></li>
+        <li class="info-numbers__item info-numbers__item_icon-2">0<span class="info-numbers__icon info-numbers__icon_2 js-tooltip" data-content="Добавления в библиотеку"></span></li>
+        <li class="info-numbers__item info-numbers__item_icon-3">0<a class="info-numbers__icon info-numbers__icon_3 js-tooltip" href="https://readli.net/koshmar-po-eta/#comments" data-content="Комментарии"></a></li>
+    </ul>
+</div>
+                    <div class="info-hide__middle">
+                                                <p class="info-hide__text">Жанр: <a class="book-info__link" href="/cat/prochaya-literatura/raznoe/">Разное</a></p>
+                    </div>
+                    <div class="info-hide__middle">
+                        <p class="info-hide__title">Аннотация:</p>
+                        <p class="info-hide__text">   Говард Филлипс Лавкрафт известен прежде всего своими шедеврами малой прозы – «Зов Ктулху», «Дагон...</p>
+                    </div>
+                    <a class="info-hide__link" href="/chitat-online/?b=1056664&pg=1"><b>Фрагмент</b>&nbsp;—&nbsp;13&nbsp;стр.</a>
+                </div>
+            </div>
+        </div>
+        <h4 class="book__title">
+            <a class="book__link js-ellip-2" href="https://readli.net/koshmar-po-eta/" title="Кошмар По-эта">Кошмар По-эта</a>
+        </h4>
+        <div class="book__top js-fade js-fade-out">
+                        <div class="book__authors-wrap">
+                <p class="book__authors"><a class="book__link" href="/avtor/%d0%bb%d0%b0%d0%b2%d0%ba%d1%80%d0%b0%d1%84%d1%82-%d0%b3%d0%be%d0%b2%d0%b0%d1%80%d0%b4/">Лавкрафт Говард</a></p>
+            </div>
+                    </div>
+        <div class="rating">
+            <span class="rating__star">
+                <img alt="" src="/img/svg/rating/rating0.svg">
+            </span>
+            <span class="rating__number">0</span>
+        </div>
+    </article>    <article class="book">
+        <div class="book__image-wrap">
+                        <a class="book__image search_res_img_list" href="https://readli.net/zov-ktulhu-3/">
+                <img alt="Зов Ктулху" src="https://readli.net/wp-content/uploads/2020/11/1080205.jpg">
+            </a>
+
+            <!-- меню три точки -->
+            
+<div class="show-more js-fade-click">
+    <button class="button-dots js-fade-click-button"><span></span></button>
+    <div class="more-hide js-fade-click-hide">
+        <ul class="more-hide__list">
+                        <li class="more-hide__item" style="">
+                <a class="add-to-want-to-read more-hide__link" data-popup="#popup-login"                   data-in-where="1" data-page="site" data-tab=""
+                   data-book-id="1080205" href="javascript: void(0)">Читаю</a>
+            </li>
+            <li class="more-hide__item" style="">
+                <a class="add-to-archive more-hide__link" data-popup="#popup-login"                   data-in-where="3" data-page="site" data-tab=""
+                   data-book-id="1080205" href="javascript: void(0)">В архив</a>
+            </li>
+                                </ul>
+    </div>
+</div>
+
+            <div class="item-info js-fade-click">
+                <button class="item-info__button js-fade-click-button no-fade"></button>
+                <div class="item-info__fix js-fade-click-fix"></div>
+                <div class="info-hide js-fade-click-hide">
+
+                    <!-- статистика -->
+                    
+<div class="info-hide__top">
+    <ul class="info-numbers">
+        <li class="info-numbers__item info-numbers__item_icon-1">290<span class="info-numbers__icon info-numbers__icon_1 js-tooltip" data-content="Просмотры"></span></li>
+        <li class="info-numbers__item info-numbers__item_icon-2">2<span class="info-numbers__icon info-numbers__icon_2 js-tooltip" data-content="Добавления в библиотеку"></span></li>
+        <li class="info-numbers__item info-numbers__item_icon-3">0<a class="info-numbers__icon info-numbers__icon_3 js-tooltip" href="https://readli.net/zov-ktulhu-3/#comments" data-content="Комментарии"></a></li>
+    </ul>
+</div>
+                    <div class="info-hide__middle">
+                                                <p class="info-hide__text">Жанр: <a class="book-info__link" href="/cat/prochaya-literatura/raznoe/">Разное</a></p>
+                    </div>
+                    <div class="info-hide__middle">
+                        <p class="info-hide__title">Аннотация:</p>
+                        <p class="info-hide__text">   Американский писатель Говард Филлипс Лавкрафт при жизни не опубликовал ни одной книги, печатаясь ...</p>
+                    </div>
+                    <a class="info-hide__link" href="/chitat-online/?b=1080205&pg=1"><b>Фрагмент</b>&nbsp;—&nbsp;21&nbsp;стр.</a>
+                </div>
+            </div>
+        </div>
+        <h4 class="book__title">
+            <a class="book__link js-ellip-2" href="https://readli.net/zov-ktulhu-3/" title="Зов Ктулху">Зов Ктулху</a>
+        </h4>
+        <div class="book__top js-fade js-fade-out">
+                        <div class="book__authors-wrap">
+                <p class="book__authors"><a class="book__link" href="/avtor/%d0%bb%d0%b0%d0%b2%d0%ba%d1%80%d0%b0%d1%84%d1%82-%d0%b3%d0%be%d0%b2%d0%b0%d1%80%d0%b4/">Лавкрафт Говард</a></p>
+            </div>
+                    </div>
+        <div class="rating">
+            <span class="rating__star">
+                <img alt="" src="/img/svg/rating/rating5.svg">
+            </span>
+            <span class="rating__number">3</span>
+        </div>
+    </article>    <article class="book">
+        <div class="book__image-wrap">
+                        <a class="book__image search_res_img_list" href="https://readli.net/pes/">
+                <img alt="Пес" src="https://readli.net/wp-content/uploads/cover3.jpg">
+            </a>
+
+            <!-- меню три точки -->
+            
+<div class="show-more js-fade-click">
+    <button class="button-dots js-fade-click-button"><span></span></button>
+    <div class="more-hide js-fade-click-hide">
+        <ul class="more-hide__list">
+                        <li class="more-hide__item" style="">
+                <a class="add-to-want-to-read more-hide__link" data-popup="#popup-login"                   data-in-where="1" data-page="site" data-tab=""
+                   data-book-id="28175" href="javascript: void(0)">Читаю</a>
+            </li>
+            <li class="more-hide__item" style="">
+                <a class="add-to-archive more-hide__link" data-popup="#popup-login"                   data-in-where="3" data-page="site" data-tab=""
+                   data-book-id="28175" href="javascript: void(0)">В архив</a>
+            </li>
+                                </ul>
+    </div>
+</div>
+
+            <div class="item-info js-fade-click">
+                <button class="item-info__button js-fade-click-button no-fade"></button>
+                <div class="item-info__fix js-fade-click-fix"></div>
+                <div class="info-hide js-fade-click-hide">
+
+                    <!-- статистика -->
+                    
+<div class="info-hide__top">
+    <ul class="info-numbers">
+        <li class="info-numbers__item info-numbers__item_icon-1">1183<span class="info-numbers__icon info-numbers__icon_1 js-tooltip" data-content="Просмотры"></span></li>
+        <li class="info-numbers__item info-numbers__item_icon-2">1<span class="info-numbers__icon info-numbers__icon_2 js-tooltip" data-content="Добавления в библиотеку"></span></li>
+        <li class="info-numbers__item info-numbers__item_icon-3">0<a class="info-numbers__icon info-numbers__icon_3 js-tooltip" href="https://readli.net/pes/#comments" data-content="Комментарии"></a></li>
+    </ul>
+</div>
+                    <div class="info-hide__middle">
+                                                <p class="info-hide__text">Жанр: <a class="book-info__link" href="/cat/fentezi/uzhasyi-i-mistika/">Мистика и Ужасы</a></p>
+                    </div>
+                    <div class="info-hide__middle">
+                        <p class="info-hide__title">Аннотация:</p>
+                        <p class="info-hide__text"> Говард Филлипс Лавкрафт  Пес  Они все не стихают, эти невыносимые звуки, эти кошмарные хлопки невид...</p>
+                    </div>
+                    <a class="info-hide__link" href="/chitat-online/?b=28175&pg=1"><b>Полный текст</b>&nbsp;—&nbsp;3&nbsp;стр.</a>
+                </div>
+            </div>
+        </div>
+        <h4 class="book__title">
+            <a class="book__link js-ellip-2" href="https://readli.net/pes/" title="Пес">Пес</a>
+        </h4>
+        <div class="book__top js-fade js-fade-out">
+                        <div class="book__authors-wrap">
+                <p class="book__authors"><a class="book__link" href="/avtor/Lavkraft-Govard-Fillips/">Лавкрафт Говард Филлипс</a></p>
+            </div>
+                    </div>
+        <div class="rating">
+            <span class="rating__star">
+                <img alt="" src="/img/svg/rating/rating5.svg">
+            </span>
+            <span class="rating__number">1</span>
+        </div>
+    </article>    <article class="book">
+        <div class="book__image-wrap">
+                        <a class="book__image search_res_img_list" href="https://readli.net/on-2/">
+                <img alt="Он" src="https://readli.net/wp-content/uploads/cover4.jpg">
+            </a>
+
+            <!-- меню три точки -->
+            
+<div class="show-more js-fade-click">
+    <button class="button-dots js-fade-click-button"><span></span></button>
+    <div class="more-hide js-fade-click-hide">
+        <ul class="more-hide__list">
+                        <li class="more-hide__item" style="">
+                <a class="add-to-want-to-read more-hide__link" data-popup="#popup-login"                   data-in-where="1" data-page="site" data-tab=""
+                   data-book-id="28170" href="javascript: void(0)">Читаю</a>
+            </li>
+            <li class="more-hide__item" style="">
+                <a class="add-to-archive more-hide__link" data-popup="#popup-login"                   data-in-where="3" data-page="site" data-tab=""
+                   data-book-id="28170" href="javascript: void(0)">В архив</a>
+            </li>
+                                </ul>
+    </div>
+</div>
+
+            <div class="item-info js-fade-click">
+                <button class="item-info__button js-fade-click-button no-fade"></button>
+                <div class="item-info__fix js-fade-click-fix"></div>
+                <div class="info-hide js-fade-click-hide">
+
+                    <!-- статистика -->
+                    
+<div class="info-hide__top">
+    <ul class="info-numbers">
+        <li class="info-numbers__item info-numbers__item_icon-1">319<span class="info-numbers__icon info-numbers__icon_1 js-tooltip" data-content="Просмотры"></span></li>
+        <li class="info-numbers__item info-numbers__item_icon-2">0<span class="info-numbers__icon info-numbers__icon_2 js-tooltip" data-content="Добавления в библиотеку"></span></li>
+        <li class="info-numbers__item info-numbers__item_icon-3">0<a class="info-numbers__icon info-numbers__icon_3 js-tooltip" href="https://readli.net/on-2/#comments" data-content="Комментарии"></a></li>
+    </ul>
+</div>
+                    <div class="info-hide__middle">
+                                                <p class="info-hide__text">Жанр: <a class="book-info__link" href="/cat/fentezi/uzhasyi-i-mistika/">Мистика и Ужасы</a></p>
+                    </div>
+                    <div class="info-hide__middle">
+                        <p class="info-hide__title">Аннотация:</p>
+                        <p class="info-hide__text"> Говард Филлипс Лавкрафт  Он  Я увидел его бессонной ночью, кода в отчаянии скитался по городу, тшас...</p>
+                    </div>
+                    <a class="info-hide__link" href="/chitat-online/?b=28170&pg=1"><b>Полный текст</b>&nbsp;—&nbsp;4&nbsp;стр.</a>
+                </div>
+            </div>
+        </div>
+        <h4 class="book__title">
+            <a class="book__link js-ellip-2" href="https://readli.net/on-2/" title="Он">Он</a>
+        </h4>
+        <div class="book__top js-fade js-fade-out">
+                        <div class="book__authors-wrap">
+                <p class="book__authors"><a class="book__link" href="/avtor/Lavkraft-Govard-Fillips/">Лавкрафт Говард Филлипс</a></p>
+            </div>
+                    </div>
+        <div class="rating">
+            <span class="rating__star">
+                <img alt="" src="/img/svg/rating/rating0.svg">
+            </span>
+            <span class="rating__number">0</span>
+        </div>
+    </article>        </div>
+        <script>
+            $(document).ready(function(){
+                $('#show-more-books-button').click(function(){
+                    $('body').addClass('loaded');
+                    $.post('/ajax-site/search-books-more/', 'offset='+$(this).attr('offset')+'&q=%D0%BB%D0%B0%D0%B2%D0%BA%D1%80%D0%B0%D1%84%D1%82', function(data){
+                        $('#books').append(data.html);
+                        $('body').removeClass('loaded');
+                        if (data.offset != '0')
+                        {
+                            $('#show-more-books-button').attr('offset', data.offset);
+                            $('#show-more-books-button').show();
+                        }
+                        else
+                            $('#show-more-books-button').hide();
+                    }, 'json');
+                });
+            });
+        </script>
+        <div class="genre-category__bottom" >
+            <button class="genre-category__button button button-white js-showmore-button" offset="7" id="show-more-books-button">Показать еще</button>
+        </div>
+    </div>
+</div>
+    </main>
+    <!-- MAIN EOF -->
+    <!-- BEGIN FOOTER -->
+    <button class="scroll-button button-blue js-scroll-top"></button>
+    <footer class="footer">
+        <div class="footer__top wrapper">
+            <div class="footer__cols">
+                <div class="footer__left-top">
+                    <nav class="footer-nav">
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item">
+                                <a class="footer-nav__link" href="/">Книги</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a class="footer-nav__link" href="/zhanryi/">Жанры</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a class="footer-nav__link" href="/avtoryi/">Авторы</a>
+                            </li>
+                        </ul>
+                    </nav>
+                                    </div>
+                <div class="footer__right-top">
+                    <p class="footer-age">Внимание! Сайт может содержать информацию, предна&shy;значенную для лиц, дости&shy;гших 18 лет.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom-wrap">
+            <div class="footer__bottom wrapper">
+                <div class="footer__cols">
+                    <div class="footer__left-bottom">
+                        <a class="footer-logo" href="/">Ридли</a>
+                        <p class="footer-copyrights">&copy; “Ридли”, 2024. Все права защищены.</p>
+                    </div>
+                    <div class="footer__right-bottom">
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER EOF -->
+</div>
+<!-- BEGIN POPUPS -->
+<div class="popups">
+    <!-- BEGIN POPUP LOGIN -->
+        <div id="popup-login">
+        <div class="popup">
+            <button class="popup__close button-close-2"></button>
+            <div class="popup-form">
+                <!-- BEGIN TAB -->
+                <div class="popup-form__item tab js-tabs-content active" id="popup-form-1">
+                                        <form id="form-login" action="/login/" method="post">
+<input type="hidden" name="_csrf-frontend" value="Pniy7wx5VycdjgmCHLVbhwRbUq_z6u9KINZeG_4ahvt1SsKgfSs6EU7EZOhJhg_AYmo_nr3ZjRxDrhEplDf-pA==">                    <div class="input-form">
+                        <label class="input-label">E-mail</label>
+                        <div class="input-item">
+                            <div class="form-group field-loginform-email required">
+
+<input type="text" id="loginform-email" class="input" name="LoginForm[email]" aria-required="true">
+
+<div class="help-block"></div>
+</div>                        </div>
+                    </div>
+                    <div class="input-form">
+                        <label class="input-label">Пароль</label>
+                        <div class="input-item">
+                            <div class="form-group field-loginform-password required">
+
+<input type="password" id="loginform-password" class="input" name="LoginForm[password]" aria-required="true">
+
+<div class="help-block"></div>
+</div>                        </div>
+                    </div>
+                    <button class="popup-form__button button">Войти</button>
+                    </form>                    <ul class="popup-form__list">
+                        <li class="popup-form__item">
+                            <a id="forgot-password" class="popup-form__link js-tabs-link" href="#popup-form-2">Забыли пароль?</a>
+                        </li>
+                        <li class="popup-form__item">
+                            <a id="registration" class="popup-form__link js-tabs-link" href="#popup-form-3">Еще не зарегистрированы?</a>
+                        </li>
+                    </ul>
+                    <div class="popup-form__or"><span>или</span></div>
+                    <div class="popup-socials">
+                        <p class="popup-socials__label">Войти через:</p>
+                        <ul class="popup-socials__list socials-1">
+                            <li class="socials-1__item">
+                                <a class="socials-1__link socials-1__link_icon-2 button-blue" href="/login/vkontakte/"></a>
+                            </li>
+                            <li class="socials-1__item">
+                                <a class="socials-1__link socials-1__link_icon-1 button-blue" href="/login/facebook/"></a>
+                            </li>
+                            <li class="socials-1__item">
+                                <a class="socials-1__link socials-1__link_icon-3 button-blue" href="/login/twitter/"></a>
+                            </li>
+                            <li class="socials-1__item">
+                                <a class="socials-1__link socials-1__link_icon-4 button-blue" href="/login/google/"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <script>
+                    $(document).ready(function() {
+                        $("#registration").live("click", function (e) {
+                            $('#popup-form-3').html('');
+                            $.post('/ajax-site/get-registration-form/', '', function (data) {
+                                $('#popup-form-3').html(data);
+                            });
+                        });
+
+                        $("#forgot-password").live("click", function (e) {
+                            $('#popup-form-2').html('');
+                            $.post('/ajax-site/get-forgot-password-form/', '', function (data) {
+                                $('#popup-form-2').html(data);
+                            });
+                        });
+                    });
+                </script>
+                <!-- TAB EOF -->
+                <!-- BEGIN TAB -->
+                <div class="popup-form__item tab js-tabs-content" id="popup-form-2">
+
+                </div>
+                <!-- TAB EOF -->
+                <!-- BEGIN TAB -->
+                <div class="popup-form__item tab js-tabs-content js-check-control" id="popup-form-3">
+
+                </div>
+                <!-- TAB EOF -->
+            </div>
+        </div>
+    </div>
+        <!-- POPUP LOGIN EOF -->
+    <!-- BEGIN POPUP COMPLAINT -->
+    
+    <!-- POPUP COMPLAINT EOF -->
+    <!-- BEGIN POPUP REWARD -->
+    
+    <!-- POPUP REWARD EOF -->
+    <!-- BEGIN POPUP ADMIN -->
+    <script>
+        $(document).ready(function() {
+            $("#message-subject").live("change", function (e) {
+                $('.admin__item').html('');
+                if ($(this).val() == 1) {
+                    $.post('/ajax-site/get-message-to-admin-form/', '', function (data) {
+                        $('#admin-tab-1').html(data);
+                    });
+                } else {
+                    $.post('/ajax-site/get-message-complicant-form/', '', function (data) {
+                        $('#admin-tab-2').html(data);
+                    });
+
+                }
+            });
+        });
+    </script>
+    <div id="popup-admin">
+        <div class="popup popup_size-3">
+            <button class="popup__close button-close-2"></button>
+            <div class="admin">
+                <div class="input-form">
+                    <label class="input-label">Тема</label>
+                    <div class="input-item">
+                        <div class="select select_1">
+                            <select class="js-formstyler" id="message-subject">
+                                <option>- Выберите тему обращения -</option>
+                                <option value="1" data-item="#admin-tab-1">Письмо администратору</option>
+                                <option value="2" data-item="#admin-tab-2">Жалоба правообладателя</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="admin__list">
+                    <!-- BEGIN TAB -->
+                    <div class="admin__item tab js-tabs-content" id="admin-tab-1">
+
+                    </div>
+                    <!-- TAB EOF -->
+                    <!-- BEGIN TAB -->
+                    <div class="admin__item tab js-tabs-content" id="admin-tab-2">
+
+                    </div>
+                    <!-- TAB EOF -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- POPUP ADMIN EOF -->
+    <!-- BEGIN POPUP CHAT -->
+    <div id="popup-chat">
+
+    </div>
+    <!-- POPUP CHAT EOF -->
+</div>
+<div class="tooltip">
+    <div class="tooltip__content"><span></span></div>
+    <div class="tooltip__fix"><span></span></div>
+    <div class="tooltip__triangle"></div>
+</div>
+<!-- POPUPS EOF -->
+<div class="icon-load"></div>
+
+<script src="/assets/6e22b5dd/yii.js"></script>
+<script src="/assets/6e22b5dd/yii.validation.js"></script>
+<script src="/assets/6e22b5dd/yii.activeForm.js"></script>
+<script>jQuery(function ($) {
+jQuery('#form-login').yiiActiveForm([{"id":"loginform-email","name":"email","container":".field-loginform-email","input":"#loginform-email","enableAjaxValidation":true,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Email»."});}},{"id":"loginform-password","name":"password","container":".field-loginform-password","input":"#loginform-password","enableAjaxValidation":true,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Password»."});}}], []);
+});</script></body>
+<script src="https://connect.facebook.net/en_US/sdk.js" async></script>
+</html>

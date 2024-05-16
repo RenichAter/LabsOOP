@@ -1,0 +1,14 @@
+C:\Users\Dmitrosh\source\repos\Lb2\async\bin\Debug\net7.0\async.exe
+C:\Users\Dmitrosh\source\repos\Lb2\async\bin\Debug\net7.0\async.deps.json
+C:\Users\Dmitrosh\source\repos\Lb2\async\bin\Debug\net7.0\async.runtimeconfig.json
+C:\Users\Dmitrosh\source\repos\Lb2\async\bin\Debug\net7.0\async.dll
+C:\Users\Dmitrosh\source\repos\Lb2\async\bin\Debug\net7.0\async.pdb
+C:\Users\Dmitrosh\source\repos\Lb2\async\obj\Debug\net7.0\async.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dmitrosh\source\repos\Lb2\async\obj\Debug\net7.0\async.AssemblyInfoInputs.cache
+C:\Users\Dmitrosh\source\repos\Lb2\async\obj\Debug\net7.0\async.AssemblyInfo.cs
+C:\Users\Dmitrosh\source\repos\Lb2\async\obj\Debug\net7.0\async.csproj.CoreCompileInputs.cache
+C:\Users\Dmitrosh\source\repos\Lb2\async\obj\Debug\net7.0\async.dll
+C:\Users\Dmitrosh\source\repos\Lb2\async\obj\Debug\net7.0\refint\async.dll
+C:\Users\Dmitrosh\source\repos\Lb2\async\obj\Debug\net7.0\async.pdb
+C:\Users\Dmitrosh\source\repos\Lb2\async\obj\Debug\net7.0\async.genruntimeconfig.cache
+C:\Users\Dmitrosh\source\repos\Lb2\async\obj\Debug\net7.0\ref\async.dll
